@@ -1,0 +1,5 @@
+<div class="active-item" *ngIf="activeItem">
+    <img [src]="'https://i.ytimg.com/vi/'+ activeItem.url.split('/').at(-1) +'/hq720.jpg'">
+    <div class="title">{{ activeItem.title }} by {{ activeItem.channel }}</div>
+</div>
+<div [innerHTML]="content" class="content"></div>
