@@ -1,59 +1,8 @@
 # Ng001
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.4.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+This simple Angular app shows a list of Youtube videos, their titles, channel name and thumbnail. The grid videos are made clickable so you can (ideally) start watching them without visiting Youtube. The app is working but you need to fix the following:
+1. When a video is selected for playing only an image is shown.
+2. If you click on a video, the page will not show you what clicked on in case you refreshed the page (so we need to persist the clicked video);
+3. The data binding/template rendering and click hooks were written entirely in vanilla JS. Instead, you need to utilize the framework features.
+4. Refactor the grid elements into a separate component called grid-item. The component is already created for you.
+5. You need to keep track of the watch history for up to 10 videos.
